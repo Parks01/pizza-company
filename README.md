@@ -6,7 +6,7 @@ Andrew Parks
 
 |Complete?| Spec | Input | Output |
 | -|---|---|---|
-| -|simple input|1|1
+| -|toppings construct works|input function in console|output toppings|
 | -|Take an input, return list of number|2| 1,2 |
 | -|replace mults of 3 with ping| 3| 1,2,ping |
 | -|replace 5s with pong|5| 1,2,ping,4,pong|
