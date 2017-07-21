@@ -6,8 +6,8 @@ Andrew Parks
 
 |Complete?| Spec | Input | Output |
 | -|---|---|---|
-| -|toppings construct works|input function in console|output toppings|
-| -|Take an input of size of pizza|size in receipt | |
+| -|create constructs with topping|console outputs construct|output toppings|
+| -|Take an input of size of pizza|| |
 | -|| |  |
 | -||| |
 | -|  |  | |
@@ -24,13 +24,7 @@ Andrew Parks
 
 **Description**
 
-This is very simple ping pong games.
-
-Numbers divisible by 3 are replaced with "ping"
-
-Numbers divisible by 5 are replaced with "pong"
-
-Numbers divisible by 15 are replaced with "ping-pong"
+Website dedicated to a pizza company. Allows you to order pizza directly online. Gives you a choice of sizes and topping
 
 **Copyright and License Information**
 
