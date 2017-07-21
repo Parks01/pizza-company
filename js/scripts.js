@@ -1,5 +1,9 @@
 //BUSINESS LOGIC
 
+var custmerOrder;
+var orderCalculation;
+
+
 function topping(cheese,pepperoni,artichoke,sausage) {
   this.cheese = "firstOption";
   this.pepperoni = "secondOption";
@@ -7,8 +11,15 @@ function topping(cheese,pepperoni,artichoke,sausage) {
   this.sausage = "fourthOption";
 }
 
+function orderForm(customer) {
+this.customer = "topping";
+}
 
-
+orderForm.prototype.chooseTopping = function() {
+  if(this.customer === "firstOption") {
+    alert("Good Choice");
+  }
+}
 
 
 
