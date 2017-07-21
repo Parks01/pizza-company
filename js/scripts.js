@@ -1,10 +1,10 @@
 //BUSINESS LOGIC
-var goodbye = "goodbye";
 
-topping function("cheese","pepperoni", "artichoke",) {
+function topping(cheese,pepperoni,artichoke,sausage) {
   this.cheese = "firstOption";
   this.pepperoni = "secondOption";
   this.artichoke = "thirdOption";
+  this.sausage = "fourthOption";
 }
 
 
@@ -16,16 +16,8 @@ topping function("cheese","pepperoni", "artichoke",) {
 
 //UI LOGIC
   $(document).ready(function() {
-  $("form").submit(function(evetn){
+  $("form").submit(function(event){
   event.preventDefault();
-  var userInput = $("#userInput1").val();
-  if(userInput === goodbye) {
-    $("#output").append(goodbye);
-      }
-    else {
-        $("#output").append("wrong");
-
-  }
 
     });
   });
