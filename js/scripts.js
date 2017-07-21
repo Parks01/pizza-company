@@ -1,9 +1,11 @@
 //BUSINESS LOGIC
 var goodbye = "goodbye";
 
-
-
-
+topping function("cheese","pepperoni", "artichoke",) {
+  this.cheese = "firstOption";
+  this.pepperoni = "secondOption";
+  this.artichoke = "thirdOption";
+}
 
 
 
