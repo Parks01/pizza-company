@@ -59,7 +59,7 @@ Pizza.prototype.calculateCost = function(){
 $(document).ready(function(){
 	$("form#pizza").submit(function(event){
 		event.preventDefault();
-		 var quantity $();
+		 var quantity = $();
 		 var size = $();
 		var pizza = new Pizza(size, quantity);
 		$("input:checkbox[name=topping]:checked").each(function(){
