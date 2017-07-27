@@ -20,3 +20,7 @@ img {
  border-top: double border;
  border-top: double border;
 }
+
+.receipt {
+  border:15px;
+}

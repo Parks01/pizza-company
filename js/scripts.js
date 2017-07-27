@@ -48,21 +48,22 @@ function Pizza(toppings,size,price) {
   $(document).ready(function() {
   $("form#pizza").submit(function(event){
   event.preventDefault();
+	 $("#output h2").empty();
 		var userInput1 = $('input:radio[name=choiceOne]:checked').val();
 		var newPizza = new Pizza(userInput1);
-		$("#output").append('<h2>' + newPizza.toppings + '</h2>');
+		$("#output").append('<li>' + newPizza.toppings + '</li>');
 
 		var userInput2 = $('input:radio[name=choiceTwo]:checked').val();
 		var newPizza = new Pizza(userInput2);
-		$("#output").append('<h2>' + newPizza.toppings + '</h2>');
+		$("#output").append('<li>' + newPizza.toppings + '</li>');
 
 		var userInput3 = $('input:radio[name=choiceThree]:checked').val();
 		var newPizza = new Pizza(userInput3);
-		$("#output").append('<h2>' + newPizza.toppings + '</h2>');
+		$("#output").append('<li>' + newPizza.toppings + '</li>');
 
 		var userInput4 = $('input:radio[name=choiceFour]:checked').val();
 		var newPizza = new Pizza(userInput4);
-		$("#output").append('<h2>' + newPizza.toppings + '</h2>');
+		$("#output").append('<li>' + newPizza.toppings + '</li>');
 
 
 
