@@ -13,26 +13,29 @@
       <div class="jumbotron">
         <h1>Welcome To Pizza World</h1>
       </div>
-      <form>
+      <form id="pizza">
      <div class="row">
        <div class="col-md-2">
        </div>
        <div class="col-md-5">
          <label>Topping Options:</label>
          <ul>
-           <li><input type="radio" id="customerOrder">Pepperoni
-            <li><input type="radio">Cheese
-            <li><input type="radio">Artichokes
-            <li><input type="radio">Sausage
+           <li><input type="radio" id="firstChoice" name="choiceOne" value="pepperoni">Pepperoni
+            <li><input type="radio" id="secondChoice" name="choiceTwo" value="cheese">Cheese
+            <li><input type="radio"id="thirdChoice" name="choiceThree" value="artichokes">Artichokes
+            <li><input type="radio"id="thirdChoice" name="choiceThree" value="sausage">Sausage
          </ul>
      </div>
      <div class="col-md-5">
        <label>Reciept:</label>
        <div class="form-group">
+         <div id="output">
+           <h2>
+           </h2>
+         </div>
        </div>
       </div>
     </div>
-    <div
      <div class="row">
        <div class="col-md-2">
        </div>
@@ -43,7 +46,6 @@
              <li><input type="radio" id="orderForm">Small
               <li><input type="radio">Meduim
               <li><input type="radio">Large
-              <li><input type="radio">XLarge
            </ul>
          </div>
          <div class="form-group">
