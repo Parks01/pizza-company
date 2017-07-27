@@ -29,12 +29,22 @@
 
 
 //Business LOGIC
-function Pizza(toppings,size,price) {
-	this.toppings = toppings;
+function Pizza(size,quantity) {
+	this.toppings = [];
 	this.size = size;
-	this.price = price;
+	this.basePrice = 5;
+	this.quantity = quantity;
 }
 
+Pizza.prototype.calculateCost = function(){
+	if (this.size === "small") {
+		return this.basePrice * this.quantity + this.toppings.length;
+	}else if (this.size === "medium") {
+		return (this.basePrice + 2) * this.quantity + this.toppings.length;
+	}else if (this.size === "large") {
+		return (this.basePrice + 3) * this.quantity + this.toppings.length;
+	}
+}
 // function pizzaData() {
 // 	var theTopping = new Pizza("pepproni", "cheese", "artichokes", "sausage");
 // 	var theSize = new Pizza("small", "meduim", "large");
@@ -45,29 +55,39 @@ function Pizza(toppings,size,price) {
 
 
 //UI LOGIC
-  $(document).ready(function() {
-  $("form#pizza").submit(function(event){
-  event.preventDefault();
-	 $("#output h2").empty();
-		var userInput1 = $('input:radio[name=choiceOne]:checked').val();
-		var newPizza = new Pizza(userInput1);
-		$("#output").append('<li>' + newPizza.toppings + '</li>');
 
-		var userInput2 = $('input:radio[name=choiceTwo]:checked').val();
-		var newPizza = new Pizza(userInput2);
-		$("#output").append('<li>' + newPizza.toppings + '</li>');
+$(document).ready(function(){
+	$("form#pizza").submit(function(event){
+		event.preventDefault();
+		 var quantity $();
+		 var size = $();
+		var pizza = new Pizza(size, quantity);
+		$("input:checkbox[name=topping]:checked").each(function(){
+			var toppingSelected = $(this).val();
+			 pizza.toppings.push(toppingSelected);
+			$('#output').append('<li>' + toppingSelected + '</li>'+ "<br>");
 
-		var userInput3 = $('input:radio[name=choiceThree]:checked').val();
-		var newPizza = new Pizza(userInput3);
-		$("#output").append('<li>' + newPizza.toppings + '</li>');
-
-		var userInput4 = $('input:radio[name=choiceFour]:checked').val();
-		var newPizza = new Pizza(userInput4);
-		$("#output").append('<li>' + newPizza.toppings + '</li>');
+		});
+	});
+});
 
 
 
+	// $('#transportation_survey').hide();
 
-
-    });
-  });
+	//  $("#output h2").empty();
+	// 	var userInput1 = $('input:radio[name=topping]:checked').val();
+	// 	var newPizza = new Pizza(userInput1);
+	// 	$("#output").append('<li>' + newPizza.toppings + '</li>');
+	 //
+	// 	var userInput2 = $('input:radio[name=choiceTwo]:checked').val();
+	// 	 newPizza = new Pizza(userInput2);
+	// 	$("#output").append('<li>' + newPizza.toppings + '</li>');
+	 //
+	// 	var userInput3 = $('input:radio[name=choiceThree]:checked').val();
+	// 	 newPizza = new Pizza(userInput3);
+	// 	$("#output").append('<li>' + newPizza.toppings + '</li>');
+	 //
+	// 	var userInput4 = $('input:radio[name=choiceFour]:checked').val();
+	// 	newPizza = new Pizza(userInput4);
+	// 	$("#output").append('<li>' + newPizza.toppings + '</li>');
