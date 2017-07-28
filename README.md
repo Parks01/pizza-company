@@ -5,12 +5,13 @@ Andrew Parks
 **Specs**
 
 |Complete?| Spec | Input | Output |
-| -|objects with correct properties|---|properties are specified|---|
-| -|input the correct topping for pizza|---|output the topping in receipt|---|
-| -|input the size of pizza|---|output it in the receipt|---|
-| -|input the price of pizza|---|output the size on receipt|---|
-| -|create prototype to calculate the prices|---|output total amount on receipt|---|
-| -|  |  | |
+|Complete?| Spec | Input | Output |
+| -|---|---|---|
+| -|simple input|pizza topping|pizza topping
+| -|Take an size option|2| Correct Size|
+| -|Take number of pizzas|Return Correct Number| 1,2,ping |
+| -|Calculate number of pizzas and toppings||
+| -| | |
 
 **Bugs**
 
