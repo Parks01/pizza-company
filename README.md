@@ -4,13 +4,11 @@ Andrew Parks
 
 **Specs**
 
-|Complete?| Spec | Input | Output |
-| -|objects with correct properties|---|properties are specified|---|
-| -|input the correct topping for pizza|---|output the topping in receipt|---|
-| -|input the size of pizza|---|output it in the receipt|---|
-| -|input the price of pizza|---|output the size on receipt|---|
-| -|create prototype to calculate the prices|---|output total amount on receipt|---|
-| -|  |  | |
+| Specifications | Input  | output |
+| --- | ----  | ---- |
+|1.User picks the pizza topping  | cheese  |cheese in reciept |
+|2.User picks the size they want| large|output large in reciept|
+|3.User picks quanity they want|2| output 2 which and calculates the price|
 
 **Bugs**
 
