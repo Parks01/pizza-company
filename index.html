@@ -12,34 +12,30 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Neon Pizza Company</h1>
-
-      <form id="pizza">
+      </div>
+      <form id="pizza" class="well">
      <div class="row">
        <div class="col-md-2">
        </div>
        <div class="col-md-5">
          <h2>Topping Options:</h2>
-<!--
-         <input type="radio" id="firstChoice" name="choiceOne" value="pepperoni">Pepperoni
-          <input type="radio" id="secondChoice" name="choiceTwo" value="cheese">Cheese
-          <input type="radio"id="thirdChoice" name="choiceThree" value="artichokes">Artichokes
-          <input type="radio"id="thirdChoice" name="choiceThree" value="sausage">Sausage
-           -->
           <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni.<br>
           <input type="checkbox" name="topping" value="Cheese"> Cheese.<br>
           <input type="checkbox" name="topping" value="Artichokes"> Artichokes.<br>
           <input type="checkbox" name="topping" value="Sausage"> Sausage.<br>
-
      </div>
      <div class="col-md-5">
-       <div class="receipt">
-       <label>Reciept:</label>
-       <div class="form-group">
-         <div id="output">
-            <ul>
-            </ul>
-         </div>
-       </div>
+         <div class="reciept" >
+         <label>Receipt:</label>
+         <div class="form-group">
+           <div id="output">
+             <p> Toppings: <span id="toppingOutput"></span> </p>
+             <p> Size: <span id="sizeOutput"></span></p>
+             <p> Quantity: <span id="quantityOutput"></span></p>
+             <p> Total cost: <span id="costOutput"></span></p>
+
+           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -55,21 +51,19 @@
               <input type="radio" name="size" value="large"> Large.</br>
            </ul>
            <h2>Quanity</h2>
-           <input type="number" name="quantity" min="1" max="10">
+           <input id="quantity" type="number" name="quantity" min="1" max="10">
          </div>
-         <div class="form-group">
-         <button type="submit" class="btn-btn  btn-success">Submit</button>
+           <div class="form-group">
+           <button type="submit" class="btn-btn  btn-success">Submit</button>
        </div>
        </div>
       </form>
      </div>
-     <div class="row">
-       <div class="form-group">
+     <div class="row" class="well">
        <div class="col-md-12">
          <img src="img/real-pizza.jpg">
+         <img src="img/cheese-pizza.jpg" class="slice">
        </div>
      </div>
-     </div>
-    </div>
   </body>
 </html>

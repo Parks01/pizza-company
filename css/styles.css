@@ -21,3 +21,21 @@ img {
  border-top: double border;
  border-top: double border;
 }
+
+.reciept {
+  border-color: black solid;
+}
+
+.well {
+  background-color: #fdf2d2;
+}
+
+img {
+  margin-left: 20px;
+
+}
+.slice {
+  margin-left:215px;
+  height:350px;
+  width:380px;
+}
