@@ -10,7 +10,7 @@ Andrew Parks
 |1.User picks the pizza topping  | cheese  |cheese in reciept |
 |2.User picks the size they want| large|output large in reciept|
 |3.User picks quanity they want|2| output 2 which and calculates the price|
-
+|4.User pushes "ok" button| push button| clears reciept and pizza choices|
 
 **Bugs**
 

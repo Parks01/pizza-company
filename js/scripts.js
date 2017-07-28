@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 		 var quantity = $("#quantity").val();
 		 var size = $("input:radio[name=size]:checked").val();
-			var pizza = new Pizza(size, quantity);
+		var pizza = new Pizza(size, quantity);
 		$("input:checkbox[name=topping]:checked").each(function(){
 			var toppingSelected = $(this).val();
 			 pizza.toppings.push(toppingSelected);
@@ -42,6 +42,12 @@ $(document).ready(function(){
 		$('#quantityOutput').append(quantity);
 
 	});
+	$("#ok").click(function(){
+		event.preventDefault();
+		$('input[type=checkbox]').prop('checked', false);
+		$('input[type=radio]').prop('checked', false);
+		 $("#quantity").val(' ');
 
-
+		 $("span").html("");
+	});
 });
