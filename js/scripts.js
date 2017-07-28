@@ -26,6 +26,7 @@ $(document).ready(function(){
 	$("form#pizza").submit(function(event){
 		event.preventDefault();
 		debugger;
+
 		 var quantity = $("#quantity").val();
 		 var size = $("input:radio[name=size]:checked").val();
 			var pizza = new Pizza(size, quantity);
@@ -41,4 +42,6 @@ $(document).ready(function(){
 		$('#quantityOutput').append(quantity);
 
 	});
+
+
 });
